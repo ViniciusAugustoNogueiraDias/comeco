@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+
+/* 
+mobile: min - 320px and max - 480px
+tablet: min - 481px and max - 768px
+laptop: min - 769px and 1023px
+desktop: min - 1024 and 1200px
+tv: min - 1201px 
+*/
+
+@media screen and (min-width: 769px) and (max-width: 1023px){
+    body, html{
+        background-image: linear-gradient(to top, #B29485, #36394E);
+    }
+
+    main{
+        height: 400px;
+        display: flex;
+    }
+
+    div#img-esquerda{
+        width: 50%;
+        height: 440px;
+        border-radius: 5px 0px 0px 5px;
+    }
+
+    div#grupo-dados{
+        width: 50%;
+        height: 100%;
+        border-radius: 0px 5px 5px 0px;
+        margin: 0px;
+    }
+}
+
+@media screen and (min-width: 1023px){
+    div#img-esquerda{
+        width: 0px;
+        background: none;
+    }
+
+    body, html{
+        background: #000 url(../img/pexels-tim-mossholder-2258339.jpg) no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    div#grupo-dados{
+        width: 768px;
+        margin: auto;
+        background-color: rgba(178, 148, 133, 0.750);
+        border-radius: 5px;
+    }
+
+
+}
+/* 
+position: absolute;
+    left: 50%;
+    top: 50%; */
